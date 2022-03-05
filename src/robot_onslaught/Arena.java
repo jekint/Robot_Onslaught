@@ -242,7 +242,7 @@ public class Arena {
 			System.out.println("Could not clear console");
 		}
 		try {
-			Thread.sleep(50);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			System.out.println("Could not sleep");
 		}
