@@ -56,7 +56,7 @@ public class Game {
 		do {
 			arena.display();
 			System.out.println();
-			System.out.println("Move (u/d/l/r//q): ");
+			System.out.println("Move (w/a/s/d//q): ");
 			input = scanner.nextLine();
 			if (input.isEmpty()) {
 				player.stand();
@@ -66,20 +66,20 @@ public class Game {
 				case 'q':
 					scanner.close();
 					return;
-				case 'U':
-				case 'u':
+				case 'W':
+				case 'w':
 					player.moveOrAttack(Onslaught.UP);
+					break;
+				case 'S':
+				case 's':
+					player.moveOrAttack(Onslaught.DOWN);
+					break;
+				case 'A':
+				case 'a':
+					player.moveOrAttack(Onslaught.LEFT);
 					break;
 				case 'D':
 				case 'd':
-					player.moveOrAttack(Onslaught.DOWN);
-					break;
-				case 'L':
-				case 'l':
-					player.moveOrAttack(Onslaught.LEFT);
-					break;
-				case 'R':
-				case 'r':
 					player.moveOrAttack(Onslaught.RIGHT);
 					break;
 				default:
