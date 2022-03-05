@@ -56,7 +56,7 @@ public class Game {
 		do {
 			arena.display();
 			System.out.println();
-			System.out.println("Move (w/a/s/d)");
+			System.out.println("Move or attack (w/a/s/d)");
 			System.out.println("Quit (q)");
 			input = scanner.nextLine();
 			if (input.isEmpty()) {
